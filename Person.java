@@ -19,4 +19,9 @@ name = n;
 
 }
 
+public String toString() {
+		return name;
+		
+	}
+
 }

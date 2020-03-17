@@ -34,7 +34,7 @@ Correct Answer: D)
       name = n;
     }
 */
-
+String name;
 Person p = new Person("Washington");
 System.out.println(p);
  
@@ -68,17 +68,16 @@ System.out.println("5.5 Skill 4b");
         Which of the following changes should be made so that the levelUp method works as intended?
         Correct Answer: A) In line 14, levelUp should be declared as type void.
         */
-       
-    Superhero s = new Superhero("John", "Devil", 5);
-	    s.levelUp(3);
-	    System.out.println(s);
+    String realName;
+    String codeName;
+    Superhero s = new Superhero("Bob Smith", "The Devil");
+    s.levelUp(3);
+    System.out.println(s);
     
-    
-       
-       
-     
         /*
-         * Explanation: 
+         * Explanation: Will correctly increment the value of the instance variable strength
+         * C) D) and E) contain no error in line 16 and a parameter cannot be declared as void so B) is wrong
          */
      
-}}
+}
+}

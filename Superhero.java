@@ -17,7 +17,7 @@ private String secretIdentity;
 
 private int strength;
 
-public Superhero(String realName, String codeName, int strength)
+public Superhero(String realName, String codeName)
 
 {
 
@@ -36,6 +36,10 @@ public void levelUp(int amount)  // line 14
 strength += amount;          // line 16
 
 }
+public String toString() {
+		return (name + ", " + secretIdentity + ", " + strength);
+		
+	}
 
 
 }
