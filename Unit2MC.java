@@ -29,9 +29,14 @@ public class Unit2MC
              color = setColor;
           }
         }
+        
       Which of the following code segments, when appearing in a class other than Thing, would create a reference of type Thing with a value of null ?
       Correct Answer: D) Thing someThing;
       */
+     
+     Thing someThing = null;
+     System.out.println(someThing);
+    
      
      /*
       * Explanation: Option D declares a a variable type Thing named someThing but never initializes it so the value will be null.

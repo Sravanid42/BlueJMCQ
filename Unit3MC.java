@@ -66,7 +66,7 @@ public class Unit3MC
           {
             weather = "warm";
           }
-       System.out.print(weather);
+       System.out.println(weather);
    
      /*
       * Explanation: temp =30, the else-clause of the second conditional statement assigns "warm", because temp >=51 evaluates to false. The answer should be "cold" 
@@ -112,23 +112,23 @@ public class Unit3MC
         String third = new String("goose");
         if (first == second)
           {
-            System.out.print("A");
+            System.out.println("A");
           }
         else if (second == third)
           {
-            System.out.print("B");
+            System.out.println("B");
           }
         else if (first.equals(second))
           {
-            System.out.print("C");
+            System.out.println("C");
           }
         else if (second.equals(third))
           {
-            System.out.print("D");
+            System.out.println("D");
           }
         else
           {
-            System.out.print("E");
+            System.out.println("E");
           }
      /*
       * Explanation: == operator compares object reference not content, so the 1sta nd 2nd conditions are false. Since the first two have the same
@@ -138,21 +138,148 @@ public class Unit3MC
      System.out.println("3.4 Skill 4c");
      
      /*
-      * 
-      */
-     
+      * Consider the following two code segments. Assume that variables x and y have been declared as int variables and have been assigned integer values.
+        I.
+          int result = 0;
+          if (x > y)
+            {
+              result = x - y;
+              System.out.print(result);
+            }
+          else if (x < y)
+            {
+              result = y - x;
+              System.out.print(result);
+            }
+          else
+            {
+              System.out.print(result);
+            }
+        II.
+          if (x < y)
+            {
+              System.out.print(y - x);
+            }
+              else
+            {
+              System.out.print(x - y);
+             }
+        Which of the following correctly compares the outputs of the two code segments?
+        Correct Answer: A) Code segment I and code segment II produce the
+        same output for all values of x and y.
+        */
+       System.out.println("x<y");
+       System.out.println("Old:");
+       int x = 5;
+       int y = 6;
+       int result = 0;
+          if (x > y)
+            {
+              result = x - y;
+              System.out.println(result);
+            }
+          else if (x < y)
+            {
+              result = y - x;
+              System.out.println(result);
+            }
+          else
+            {
+              System.out.println(result);
+            }
+       
+      System.out.println("New:");
+      if (x < y)
+            {
+              System.out.println(y - x);
+            }
+              else
+            {
+              System.out.println(x - y);
+             }
+       System.out.println("x>y");
+       System.out.println("Old:");
+       int a = 6;
+       int b = 5;
+       int result2 = 0;
+          if (a > b)
+            {
+              result = a - b;
+              System.out.println(result2);
+            }
+          else if (a < b)
+            {
+              result = b - a;
+              System.out.println(result2);
+            }
+          else
+            {
+              System.out.println(result2);
+            }
+       
+      System.out.println("New:");
+      if (a < b)
+            {
+              System.out.println(b - a);
+            }
+              else
+            {
+              System.out.println(a - b);
+             }
+             System.out.println("x=y");
+       System.out.println("Old:");
+       int c = 5;
+       int d = 5;
+       int result3 = 0;
+          if (c > d)
+            {
+              result = x - y;
+              System.out.println(result3);
+            }
+          else if (c < d)
+            {
+              result = y - x;
+              System.out.println(result3);
+            }
+          else
+            {
+              System.out.println(result3);
+            }
+       
+      System.out.println("New:");
+      if (c < d)
+            {
+              System.out.println(d - c);
+            }
+              else
+            {
+              System.out.println(c - d);
+             }
      /*
-      * 
+      * Explanation: Since both code segments print out |x-y|.
+      * When x>y, x-y is printed
+      * When x<y, y-x is printed
+      * When x=y, 0 is printed
       */
      
      System.out.println("----------");
      System.out.println("3.6 Skill 4c");
      
      /*
-      * 
+      * In the following expression, j, k, and m are properly declared and initialized int variables.
+        !((j == k) && (k > m))
+        Which of the following is equivalent to the expression above?
+        Correct Answer: B) (j != k) || (k <= m)
       */
+     int j = 1;
+     int k = 2;
+     int m = 3;
+     System.out.println("!((j == k) && (k > m)):" + !((j == k) && (k > m)));
+     System.out.println((j != k) || (k <= m));
+     
      
      /*
-      * 
-      */
+      * Explanation: De Morgan's law states thht !(A && B) is equal to !A || !B
+      !A is j!=k and B is k>m, then !B k<=m. Therefore, j != k || k<=m
+        */
 }}
